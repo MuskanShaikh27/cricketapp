@@ -1,0 +1,14 @@
+.mains{
+    display: flex;
+    justify-content: center;
+    margin:30px;
+    
+}
+
+.example-card {
+ 
+
+    max-width: 350px;
+    margin:20px 30px;
+   
+  }

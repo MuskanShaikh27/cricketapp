@@ -1,0 +1,16 @@
+.example-card{
+    max-width: 350px;
+    margin:20px 30px;
+   
+  }
+
+  .conatiner-fluid{
+      display:flex;
+     flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}

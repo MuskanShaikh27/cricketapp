@@ -1,0 +1,49 @@
+*{
+    font-size: 15px;
+}
+h3,h5{
+    font-size: 15px;
+}
+.main{
+    background: linear-gradient(to bottom left, #191970 0%, #ffffff 100%);
+margin: 20px;
+padding: 50px;
+}
+
+.divide{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    background-color: transparent;
+}
+table td,table th{
+   
+        padding: .75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+
+}
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.result{
+    font-style: italic;
+}

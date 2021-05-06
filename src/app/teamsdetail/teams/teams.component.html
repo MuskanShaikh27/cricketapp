@@ -1,0 +1,39 @@
+<h2>Teams Info</h2>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let t of teams" (click)=selected(t.tid)>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         
+        </mat-panel-title>
+        <mat-panel-description>
+            Team-{{t.name}} -from {{t.country}}        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div  *ngIf="players && t.tid == selectedTeamId && openlist">
+        <ul >
+            <li *ngFor="let p of players, let i = index">
+                <div  class="playerlist">
+                    <div>
+                        <p class="mb-0">{{i+1}}.</p>
+                    </div>
+
+                    <div>
+                        <p class="mb-0">{{p.text}}</p>
+                    </div>
+                    <div >
+                        <p class="mb-0">{{p.matches}} matches</p>
+                    </div>
+                    <div>
+                        <p class="mb-0">{{p.name}}</p>
+                    </div>
+                    <div >
+                        <a routerLink="/player/{{p.pid}}">Go to Player Profile</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+      
+    
+    </mat-expansion-panel>
+    
+  </mat-accordion>

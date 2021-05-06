@@ -1,0 +1,19 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  .logo{
+    margin-left: 50px;
+  }
+  .mobileview{
+    color:black;
+  }
+  @media all and (max-width:780px){
+    .desktop{
+      display:none;
+    }
+  }
